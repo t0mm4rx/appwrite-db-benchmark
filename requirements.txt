@@ -1,0 +1,5 @@
+faker
+appwrite
+psycopg2-binary
+python-dotenv
+mariadb
