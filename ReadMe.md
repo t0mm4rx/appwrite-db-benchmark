@@ -25,10 +25,16 @@ We will write this data structure:
 
 Data will be generated using faker.
 
-## Result
+## Result of benchmark #1
+
+This test writes 1,000 documents, and get 1,000 documents by ids.
 
 |  db       |  average read  |  average write  |
 | ---       |  ---           |  ---            |
 | appwrite  |  14.05ms       |  15.1ms         |
 | mariadb   |  2.1ms         |  1.1ms          |
 | pg        |  1.5ms         |  1.3ms          |
+
+The appwrite Python SDK is using the `requests` package, which is very slow.
+
+It might be the reason why it is 10x slower than mariadb.
