@@ -6,9 +6,9 @@ from dataclasses import dataclass
 import urllib3
 import faker
 from dotenv import load_dotenv
+import psycopg2
 from appwrite.client import Client
 from appwrite.services.databases import Databases
-import psycopg2
 import mariadb
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)

@@ -38,3 +38,10 @@ This test writes 1,000 documents, and get 1,000 documents by ids.
 The appwrite Python SDK is using the `requests` package, which is very slow.
 
 It might be the reason why it is 10x slower than mariadb.
+
+## Result of benchmark #2
+
+This test gets 1,000 documents by ids, with different progressive amount of data in Appwrite.
+|  size of db    |  average read  |
+|  ---           |  ---           |
+|  100,000       |  12.1ms        |
